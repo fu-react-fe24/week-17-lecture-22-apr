@@ -1,0 +1,9 @@
+.todo-list__item {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    border: 2px solid white;
+    font-weight: 700;
+    cursor: pointer;
+}
