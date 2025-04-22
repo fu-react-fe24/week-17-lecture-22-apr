@@ -1,12 +1,18 @@
 import Button from "./Button";
+import useCountStore from "../stores/useCountStore";
 
-function ButtonGroup({setCount}) {
+function ButtonGroup() {
+  // const increment = useCountStore(state => state.increment);
+  // const decrement = useCountStore(state => state.decrement);
+  // const reset = useCountStore(state => state.reset);
+
+  const { increment, decrement, reset } = useCountStore();
 
   return (
     <section>
-        <Button text="Decrement" onClick={() => setCount(c => c - 1)} />
-        <Button text="Increment" onClick={() => setCount(c => c + 1)} />
-        <Button text="Reset" onClick={() => setCount(0)} />
+        <Button text="Decrement" onClick={decrement} />
+        <Button text="Increment" onClick={increment} />
+        <Button text="Reset" onClick={reset} />
     </section>
   )
 }

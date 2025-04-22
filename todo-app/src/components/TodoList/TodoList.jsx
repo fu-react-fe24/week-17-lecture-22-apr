@@ -1,7 +1,10 @@
 import TodoItem from "../TodoItem/TodoItem";
 import './todoList.css';
+import useTodoStore from "../../stores/useTodoStore";
 
-function TodoList({todos}) {
+function TodoList() {
+  const { todos } = useTodoStore();
+  
   return (
     <ul className="todo-list">
         {

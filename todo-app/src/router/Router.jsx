@@ -2,12 +2,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import TodoPage from "../pages/TodoPage";
 import FormPage from "../pages/FormPage";
 
-const Router = ({todos}) => {
+const Router = () => {
 
     const router = createBrowserRouter([
         {
             path : '/',
-            element : <TodoPage todos={todos} />
+            element : <TodoPage />
         },
         {
             path : '/form',

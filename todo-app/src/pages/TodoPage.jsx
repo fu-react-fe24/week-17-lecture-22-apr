@@ -1,12 +1,12 @@
 import Nav from "../components/Nav/Nav"
 import TodoList from "../components/TodoList/TodoList"
 
-function TodoPage({todos}) {
+function TodoPage() {
   return (
     <section className="page">
         <Nav page="todo" />
         <h1>TodoPage</h1>
-        <TodoList todos={todos} />
+        <TodoList />
     </section>
   )
 }
